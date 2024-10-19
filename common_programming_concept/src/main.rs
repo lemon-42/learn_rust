@@ -1,3 +1,5 @@
+mod variables;
+
 fn main() {
-    println!("Let's learn more about basic programming concept!");
+    println!("Let's learn more about common programming concept!");
 }
