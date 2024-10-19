@@ -2,6 +2,8 @@
 
 This folder contains the code about basic programming concept. This README is used to hightlight some key concept.
 
+**NOTES** : For better understanding about those key concept, please refer directly to the code.
+
 ## Variables
 
 In Rust, variables are immutable by default. This means once a variable is bound to a value, you cannot change that value unless the variable is explicitly marked as mutable using the `mut` keyword.
