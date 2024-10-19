@@ -1,6 +1,6 @@
 const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
 
-fn main() {
+pub fn variables() {
     println!("--- Section 1 : Immutable Variable ---\n");
 
     let x = 5;
