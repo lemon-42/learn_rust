@@ -2,6 +2,7 @@
 // More about this later
 mod variables;
 mod data_types_scalar;
+mod data_types_compound;
 
 fn main() {
     println!("Let's learn more about common programming concept!\n");
@@ -10,4 +11,5 @@ fn main() {
     variables::variables();
 
     data_types_scalar::scalar();
+    data_types_compound::compound();
 }
