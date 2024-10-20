@@ -1,5 +1,13 @@
 #[allow(unused_variables)]
 
+fn take_possession(s: String) {
+    println!("{s}");
+}
+
+fn create_copy(x: i32) {
+    println!("{x}");
+}
+
 fn main() {
     /*
      {                     // s is not valid here, it’s not yet declared
@@ -47,4 +55,16 @@ fn main() {
     // Tuple, only if they contain type that implement the `Copy` trait. 
     // So (i32, i32) this works and this (i32, String) doesn't.
 
+    // Uncommenting the following line result in an error.
+    // The function `take_possession()` take ownership of the `x` variable.
+    // After the ownership is transferred, we can no longer use `x`, as it has been moved.
+    // let x = String::from("hello");
+    // take_possession(x);
+    // println!("{x}");
+
+    // Uncommenting the following line will not result in an error.
+    // This is because integer types implement the `Copy` trait, meaning they are copied instead of moved.
+    // let x = 5;
+    // create_copy(x);
+    // println!("{x}");
 }
