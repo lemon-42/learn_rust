@@ -14,4 +14,3 @@ fn main() {
         number += 1;
     }
 }
-
