@@ -1,0 +1,6 @@
+[package]
+name = "n_number_of_fibonacci"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
