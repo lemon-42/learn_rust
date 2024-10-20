@@ -1,12 +1,12 @@
-use std::io;
-use std::cmp::Ordering;
 use rand::Rng;
+use std::cmp::Ordering;
+use std::io;
 
 fn main() {
     println!("Guess the number !");
 
     // Initialize a random number generator (RNG) specific to the current thread
-    // This RNG is automatically seeded. 
+    // This RNG is automatically seeded.
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
     loop {
