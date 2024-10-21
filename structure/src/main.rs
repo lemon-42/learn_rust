@@ -2,6 +2,13 @@
 // of our structure. Also, we don't have to rely on the order of the data to specify
 // or access values of an instance
 
+// Tuple struct
+struct Color(i32, i32, i32);
+struct Point(i32, i32, i32);
+
+// Unit-Like struct
+struct AlwaysEqual;
+
 #[allow(dead_code)]
 struct User {
     active: bool,
@@ -59,4 +66,11 @@ fn main() {
     // So this will not work :
     //
     // user1.email = String::from("hello");
+
+    /* Tuple struct */
+    let origin = Point(0, 0, 0);
+    let black = Color(0, 0, 0);
+
+    /* Unit-Like struct */
+    let subject = AlwaysEqual;
 }
