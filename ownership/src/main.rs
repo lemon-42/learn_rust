@@ -1,9 +1,10 @@
 #[allow(unused_variables)]
-
+#[allow(dead_code)]
 fn take_possession(s: String) {
     println!("{s}");
 }
 
+#[allow(dead_code)]
 fn create_copy(x: i32) {
     println!("{x}");
 }
