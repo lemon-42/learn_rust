@@ -63,7 +63,7 @@ fn main() {
     // `String` in `username` was moved. If we had assigned new `String`
     // values to `user2`'s fields, only `active` and `sign_in_count` from
     // `user1` would be copied, as they implement the `Copy` trait.
-    // So this will not work :
+    // So this will not work if we declare user2 with user1 attributes:
     //
     // user1.email = String::from("hello");
 
