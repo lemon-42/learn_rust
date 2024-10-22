@@ -62,4 +62,30 @@ fn main() {
         7 => remove_cool_hat(),
         _ => reroll(),
     }
+
+    /* More about if let */
+
+    // An if let construct is used here for clearer handling of the Option type.
+    let u8_value: Option<u8> = Some(3);
+    // match u8_value {
+    //     Some(x) => println!("here is the value : {x}"),
+    //     _ => (),
+    // }
+
+    // If there is a value, print it.
+    if let Some(x) = u8_value {
+        println!("here is the value : {x}");
+    }
+
+    let mut count = 0;
+
+    let coin = Coin::Penny;
+
+    if let Coin::Quarter(state) = coin {
+        println!("State quarter from {state:?}!");
+    } else {
+        count += 1;
+    }
+
+    println!("{count}");
 }
