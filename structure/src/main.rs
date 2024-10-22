@@ -1,3 +1,7 @@
+use structure_examples::area;
+
+mod structure_examples;
+
 // Structure are like tuples. But, unlike tuples, we can give a name to the element
 // of our structure. Also, we don't have to rely on the order of the data to specify
 // or access values of an instance
@@ -28,6 +32,7 @@ fn build_user(email: String, username: String) -> User {
 }
 
 fn main() {
+    println!("=== Section 5.1 ===\n");
     // To use a structure after we've defined it, we create an instance of that struct
     // by specifying concrete values for each fields.
     // If we want to change sime fields afterwards, we need to mutate our instance
@@ -73,4 +78,11 @@ fn main() {
 
     /* Unit-Like struct */
     let subject = AlwaysEqual;
+
+    println!("=== Section 5.2 ===");
+
+    let width1 = 50;
+    let height1 = 30;
+
+    println!("The area of the rectangle is : {}", area(width1, height1));
 }
